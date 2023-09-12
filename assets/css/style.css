@@ -1267,3 +1267,14 @@ h6 {
   text-decoration: none;
   color: #6c757d; /* Ubah warna sesuai keinginan Anda */
 }
+
+/* For shorten text card */
+/* sorten text */
+.shorten-text-card {
+  display: -webkit-box; /* menampilkan teks dalam kotak yang dapat diatur */
+    -webkit-line-clamp: 2; /* menampilkan hanya 2 baris teks */
+    -webkit-box-orient: vertical; /* menampilkan teks secara vertikal */
+    overflow: hidden; /* agar teks yang tidak muat tidak ditampilkan */
+    text-overflow: ellipsis; /* menampilkan tanda elipsis (...) */
+    width: 100%; /* lebar teks yang ditampilkan */
+}
