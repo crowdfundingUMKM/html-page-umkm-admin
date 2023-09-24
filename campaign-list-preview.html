@@ -152,7 +152,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="pages-profile.html">
                 <i class="bi bi-person"></i>
                 <span>My Profile</span>
               </a>
@@ -162,7 +162,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="pages-profile.html">
                 <i class="bi bi-gear"></i>
                 <span>Account Settings</span>
               </a>
@@ -196,128 +196,196 @@
 
   </header><!-- End Header -->
 
-   <!-- ======= Sidebar ======= -->
-   <aside id="sidebar" class="sidebar">
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
 
     <ul class="sidebar-nav" id="sidebar-nav">
-  
+
       <li class="nav-item">
         <a class="nav-link collapsed" href="index.html">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
-  
-      <li class="nav-item">
-        <a class="nav-link " data-bs-target="#make-campaign-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Campaign UMKM</span><i class="bi bi-chevron-down ms-auto"></i>
+
+      <!-- TIHIS my sidebar UP-->
+      <!-- Service Status -->
+      <li class="nav-item side-service">
+        <a class="nav-link collapsed" data-bs-target="#service-status" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-lock-fill"></i><span>Service Status</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="make-campaign-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+        <ul id="service-status" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="campaign-create.html" >
-              <i class="bi bi-circle"></i><span>Buat Campaign</span>
+            <a href="service-status.html">
+              <i class="bi bi-circle"></i><span>Daftar Service Status </span>
+            </a>
+          </li>
+        
+        </ul>
+      </li>
+      <!-- End Service Status-->
+
+      <!-- User Admin  -->
+      <li class="nav-item side-service">
+        <a class="nav-link collapsed" data-bs-target="#side-user-admin" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-person-gear"></i><span>User Admin</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="side-user-admin" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="admin-user.html">
+              <i class="bi bi-circle"></i><span>Daftar User Admin</span>
             </a>
           </li>
           <li>
-            <a href="campaign-update.html" >
-              <i class="bi bi-circle"></i><span>Update Campaign</span>
+            <a href="admin-update-pass.html" >
+              <i class="bi bi-circle"></i><span>Update Password User Admin</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <!-- End User Admin -->
+
+      <!-- User investor -->
+      <li class="nav-item side-service">
+        <a class="nav-link collapsed" data-bs-target="#side-user-investor" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-person-fill"></i><span>User Investor</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="side-user-investor" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="investor-user.html">
+              <i class="bi bi-circle"></i><span>Daftar User Investor</span>
             </a>
           </li>
           <li>
-            <a href="campaign-preview.html" class="active">
+            <a href="investor-update-pass.html">
+              <i class="bi bi-circle"></i><span>Update Password User Investor</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <!-- End User investor-->
+
+      <!-- User Campaign -->
+      <li class="nav-item side-service">
+        <a class="nav-link " data-bs-target="#side-user-campaign" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-people-fill"></i><span>User Campaign</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="side-user-campaign" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="campaign-user.html">
+              <i class="bi bi-circle"></i><span>Daftar User Campaign</span>
+            </a>
+          </li>
+          <li>
+            <a href="campaign-list-umkm.html">
+              <i class="bi bi-circle"></i><span>Daftar Campaign UMKM</span>
+            </a>
+          </li>
+          <li>
+            <a href="campaign-list-preview.html" class="active">
               <i class="bi bi-circle"></i><span>Preview Campaign</span>
             </a>
           </li>
           <li>
+            <a href="campaign-update-pass.html">
+              <i class="bi bi-circle"></i><span>Update Pass User Campaign</span>
+            </a>
+          </li>
+          <li>
             <a href="campaign-donation-fund.html" >
-              <i class="bi bi-circle"></i><span>Dana Donasi</span>
+              <i class="bi bi-circle"></i><span>Pengajuan Pencairan Dana</span>
             </a>
           </li>
         </ul>
-      </li><!-- End Components Nav -->
-  
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#transaction-user" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>Transaksi User</span><i class="bi bi-chevron-down ms-auto"></i>
+      </li>
+      <!-- End User Campaign-->
+
+      <!-- User Reviewer -->
+      <li class="nav-item side-service">
+        <a class="nav-link collapsed" data-bs-target="#side-user-reviewer" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-person-lines-fill"></i><span>User Konsultan</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="transaction-user" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <ul id="side-user-reviewer" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="transaction-user.html">
-              <i class="bi bi-circle"></i><span>Transaksi User Investor</span>
+            <a href="reviewer-user.html">
+              <i class="bi bi-circle"></i><span>Daftar User Konsultan</span>
+            </a>
+          </li>
+          <li>
+            <a href="reviewer-update-pass.html">
+              <i class="bi bi-circle"></i><span>Update User Konsultan</span>
+            </a>
+          </li>
+          <li>
+            <a href="reviewer-list-review.html">
+              <i class="bi bi-circle"></i><span>Daftar Review Konsultan</span>
             </a>
           </li>
         </ul>
-      </li><!-- End Forms Nav -->
-  
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#review-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-layout-text-window-reverse"></i><span>Review Campaign</span><i class="bi bi-chevron-down ms-auto"></i>
+      </li>
+      <!-- End User Campaign-->
+
+      <!-- Service Transaction-->
+      <li class="nav-item side-service">
+        <a class="nav-link collapsed" data-bs-target="#side-service-transaction" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-cash"></i><span>Service Transaction</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="review-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <ul id="side-service-transaction" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="review-campaign.html">
-              <i class="bi bi-circle"></i><span>Review Campaign</span>
+            <a href="transaction-user-investor.html">
+              <i class="bi bi-circle"></i><span>Semua Transaksi Investor</span>
             </a>
           </li>
         </ul>
-      </li><!-- End Tables Nav -->
-  
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#profit-user" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span>Profit User</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="profit-user" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="profit-user-investor.html">
-              <i class="bi bi-circle"></i><span>Profit User Investor</span>
-            </a>
-          </li>
-          <li>
-            <a href="profit-user-reviewer.html">
-              <i class="bi bi-circle"></i><span>Profit User Konsultan</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Charts Nav -->
-  
-  
+      </li>
+      <!-- End Service Transaction-->
+
+            <!-- Notif Admin -->
+            <li class="nav-item side-service">
+              <a class="nav-link collapsed" data-bs-target="#side-notif-admin" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-app-indicator"></i><span>Notifikasi Admin</span><i class="bi bi-chevron-down ms-auto"></i>
+              </a>
+              <ul id="side-notif-admin" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                  <a href="pages-notif-admin.html">
+                    <i class="bi bi-circle"></i><span>Notif Admin</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="pages-notif-user.html">
+                    <i class="bi bi-circle"></i><span>Notif dari User</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="pages-create-info.html">
+                    <i class="bi bi-circle"></i><span>Buat Notifikasi</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- End Notif Admin-->
+
+      <!-- End this my sidabar UP -->
+
+
       <li class="nav-heading">Pages</li>
-  
+
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
+        <a class="nav-link collapsed" href="pages-profile.html">
           <i class="bi bi-person"></i>
           <span>Profile</span>
         </a>
       </li><!-- End Profile Page Nav -->
-  
+
       <li class="nav-item">
         <a class="nav-link collapsed" href="pages-faq.html">
           <i class="bi bi-question-circle"></i>
           <span>F.A.Q</span>
         </a>
       </li><!-- End F.A.Q Page Nav -->
-  
-        <!-- Notif Admin -->
-      <li class="nav-item side-service">
-        <a class="nav-link collapsed" data-bs-target="#side-notif-admin" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-app-indicator"></i><span>Notifikasi Admin</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="side-notif-admin" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="pages-notif-admin.html" >
-              <i class="bi bi-circle"></i><span>Notif Admin</span>
-            </a>
-          </li>
-          <li>
-            <a href="pages-contact.html">
-              <i class="bi bi-circle"></i><span>Lapor Admin</span>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <!-- End Notif Admin-->
+      
     </ul>
-  
+
   </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
