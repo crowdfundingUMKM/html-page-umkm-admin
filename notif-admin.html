@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Buat Notif / Admin Mode</title>
+  <title>Notif Admin / Admin Mode</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -28,13 +28,12 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
 
-   <!-- ======= Header ======= -->
-   <header id="header" class="header fixed-top d-flex align-items-center">
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
@@ -44,6 +43,12 @@
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
 
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
 
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
@@ -129,21 +134,17 @@
 
         </li><!-- End Notification Nav -->
 
-    
-
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-            <!-- Name Ivestor -->
-            <span class="d-none d-md-block dropdown-toggle ps-2">Ahmad Zaky</span>
+            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <!-- Nama investor -->
-              <h6>Ahmad Zaky</h6>
-              <span>Investor UMKM</span>
+              <h6>Kevin Anderson</h6>
+              <span>Crowdfunding Admin</span>
             </li>
             <li>
               <hr class="dropdown-divider">
@@ -166,7 +167,6 @@
             <li>
               <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
                 <i class="bi bi-question-circle"></i>
-                <!-- Rediret to faq CRWD ADMIN -->
                 <span>Need Help?</span>
               </a>
             </li>
@@ -340,17 +340,17 @@
               </a>
               <ul id="side-notif-admin" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
                 <li>
-                  <a href="pages-notif-admin.html">
+                  <a href="notif-admin.html" class="active">
                     <i class="bi bi-circle"></i><span>Notif Admin</span>
                   </a>
                 </li>
                 <li>
-                  <a href="pages-notif-user.html">
+                  <a href="notif-user.html" >
                     <i class="bi bi-circle"></i><span>Notif dari User</span>
                   </a>
                 </li>
                 <li>
-                  <a href="pages-create-info.html" class="active">
+                  <a href="notif-create-info.html" >
                     <i class="bi bi-circle"></i><span>Buat Notifikasi</span>
                   </a>
                 </li>
@@ -381,89 +381,70 @@
 
   </aside><!-- End Sidebar-->
 
-
   <main id="main" class="main">
+
     <div class="pagetitle">
-      <h1>Buat Notif</h1>
+      <h1>Notif Admin</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item">Pages</li>
-          <li class="breadcrumb-item active">Buat Notif</li>
+          <li class="breadcrumb-item active">Notif Admin</li>
         </ol>
       </nav>
-    </div>
-    <section class="section dashboard">
-      <div class="row">
-        <div class="col-lg-8">
+    </div><!-- End Page Title -->
 
+    <section class="section">
+      <div class="row">
+        <div class="col-lg">
+          
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Buat Notif Untuk User</h5>
-
-              <!-- General Form Elements -->
-              <form>
-                <div class="row mb-3">
-                  <label for="inputText" class="col-sm-2 col-form-label">Nama</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" value="yourName" disabled>
-                  </div>
-                </div>
-                
-                <div class="row mb-3">
-                  <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-                  <div class="col-sm-10"> 
-                    <input type="email" class="form-control" value="youremai@userinvestor.com" disabled>
-                  </div>
-                </div>
-
-                <div class="row mb-3">
-                  <label for="inputText" class="col-sm-2 col-form-label">Judul</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" placeholder="Judul">
-                  </div>
-                </div>
-
-                <div class="row mb-3">
-                  <label for="inputPassword" class="col-sm-2 col-form-label">Deskripsi Info</label>
-                  <div class="col-sm-10">
-                    <textarea class="form-control" style="height: 100px" placeholder="Informasi admin"></textarea>
-                  </div>
-                </div>
-
-                <div class="row mb-3">
-                  <label class="col-sm-2 col-form-label">Untuk</label>
-                  <div class="col-sm-10">
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>All</option>
-                      <option value="2">User Investor</option>
-                      <option value="3">User Campaign</option>
-                      <option value="3">User Konsultan</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="row mb-3">
-                  <label class="col-sm-2 col-form-label">Submit Button</label>
-                  <div class="col-sm-10">
-                    <button type="submit" class="btn btn-primary">Submit Info</button>
-                  </div>
-                </div>
-
-              </form><!-- End General Form Elements -->
-
+              <h5 class="card-title">Judul Informasi - <strong>User Admin</strong></h5>
+              <p>This is an examle page with no contrnt. You can use it as a starter for your custom pages.</p>
+              <br>
+              <div class="user-admin ">
+                <p>Name Admin - 12 Mei 2023</p>
+              </div>
+              <a href="#"><button class="btn btn-success">Done</button></a>
+              <a href="#"><button class="btn btn-danger">Delete</button></a>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Judul Informasi - <strong>User Reviewer</strong></h5>
+              <p>This is an examle page with no contrnt. You can use it as a starter for your custom pages.</p>
+              <br>
+              <div class="user-admin">
+                <p>Julian Androw - 12 Mei 2023</p>
+              </div>
+              <a href="#"><button class="btn btn-success">Done</button></a>
+              <a href="#"><button class="btn btn-danger">Delete</button></a>
             </div>
           </div>
 
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Judul Informasi - <strong>User Campaign</strong></h5>
+              <p>This is an examle page with no contrnt. You can use it as a starter for your custom pages.</p>
+              <br>
+              <div class="user-admin">
+                <p>Julian Androw - 12 Mei 2023</p>
+              </div>
+              <a href="#"><button class="btn btn-success">Done</button></a>
+              <a href="#"><button class="btn btn-danger">Delete</button></a>
+            </div>
+          </div>
+        
         </div>
       </div>
-
-        <!-- /.container-fluid -->
     </section>
+
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+   <!-- ======= Footer ======= -->
+   <footer id="footer" class="footer">
     <div class="copyright">
       &copy; Copyright <strong><span>Crowdfunding UMKM</span></strong>. All Rights Reserved (Skripsi TA)
     </div>
